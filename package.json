@@ -1,0 +1,19 @@
+{
+  "name": "rc4",
+  "version": "1.0.0",
+  "description": "RC4 encryption algorithm on JavaScript",
+  "main": "rc4.module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neroun547/RC4.git"
+  },
+  "author": "Gosha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neroun547/RC4/issues"
+  },
+  "homepage": "https://github.com/Neroun547/RC4#readme"
+}
