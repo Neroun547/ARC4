@@ -61,7 +61,15 @@ function byteArrayToString(byteArray) {
     return String.fromCharCode(...byteArray);
 }
 
-module.exports = { encrypt, decode, stringToByteArray, byteArrayToString };
+function encryptInHex(key, data) {
+    return Buffer.from(encrypt(stringToByteArray(key), stringToByteArray(data))).toString("hex");
+}
+
+function decodeFromHexToString(key, data) {
+    return byteArrayToString(decode(stringToByteArray(key), Uint8Array.from(Buffer.from(data, "hex"))));
+}
+
+module.exports = { encrypt, decode, stringToByteArray, byteArrayToString, encryptInHex, decodeFromHexToString };
 
 
 
