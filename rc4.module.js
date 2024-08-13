@@ -5,6 +5,7 @@ function encrypt(key, data) {
 
     initKey();
     // Ініціалізація ключу
+    // Key Scheduling Algorithm
     function initKey() {
         const keyLength = key.length;
 
@@ -27,7 +28,12 @@ function encrypt(key, data) {
         array[index2] = tmp;
     }
 
-    /* Беремо елемент з масиву ключу:
+    /*
+    Генератор псевдовипадкової послідовності
+
+    Pseudo-Random Generation Algorithm
+
+    Беремо елемент з масиву ключу:
         1. Беремо два індикси
         2. Складаємо елементи за цими індексами отримане число і є індексом елементу в масиві ключу
      */
